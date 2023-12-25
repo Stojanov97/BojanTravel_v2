@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+:root{
+    --main-bg-color: #eee;
+    --secondary-bg-color: #535353;
+    --main-text-color: black;
+    --secondary-text-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    background-color: var(--main-bg-color);
+}
+
+header{
+    background-image: url(https://goverdeexclusive.com/wp-content/uploads/2022/05/Setra-426-18-scaled.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.links{
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 0px 40px;
+    align-items: end;
+    text-align: center;
+}
+
+.links a{
+    color: var(--secondary-text-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.logo{
+    height: 70px;
+}
+
+.logo img{
+    width: inherit;
+    height: inherit;
+}
+
+main{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--main-text-color);
+
+}
+
+.main-text{
+    border-radius: 30px;
+    padding: 15px 30px;
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-bg-color);
+    width: 60%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px 0px;
+}
+
+footer >div{
+    width: 360px;
+}
+
+    a {
+    color: var(--secondary-text-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+table{
+    border-collapse: collapse;
+    background-color: #909090;
+}
+
+td, th{
+    padding: 8px;
+}
+
+#avtobusi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+}
+    .avtobus {
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 333px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+.avtobus>img {
+    width: 100%;
+    height: 100%;
+}
+
+.overlayBusText {
+    top:240px;
+    overflow: hidden;
+    position: absolute;
+    width: 500px;
+    height: 333px;
+    font-size: 23px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; 
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.2),rgba(0,0,0,0.5),rgb(0, 0, 0));
+    transition: all 0.5s ease-in-out;
+}
+
+.overlayBusText>h2{
+    font-weight:bold;
+    padding: 4px;
+    border: 2px solid white;
+}
+
+.overlayBusText>p{
+    text-align: center;
+}
+
+.avtobus:hover .overlayBusText{
+    top: 0;
+    background: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.2),rgba(0,0,0,0.5),rgb(0, 0, 0));
+}
+
+@media screen and (max-width: 1000px){
+    .main-text{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .avtobus {
+        width: 350px;
+        height: 250px;
+    }
+    .overlayBusText {
+        width: 350px;
+        height: 250px;
+        top:175px
+    }
+    .overlayBusText>h2{
+        font-size: 20px;
+    }
+    .overlayBusText>p{
+        font-size: 15px;
+    }
+    .avtobus>img {
+        width: 350px;
+        height: 250px;
+    }
+
+}
+
+@media screen and (max-width: 410px){
+    .links{
+        align-items: center;
+    }
+}
